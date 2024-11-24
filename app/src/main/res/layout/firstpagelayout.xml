@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="7dp"
+    android:layout_marginBottom="10dp"
+    app:cardBackgroundColor="#E6111216"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/fromTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="From"
+            android:textAlignment="center"
+            android:textColor="#7AFFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/Value1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fromTxt"
+            android:fontFamily="@font/victor_mono_bold"
+            android:paddingTop="10dp"
+            android:text="Adiss Ababa"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:backgroundTint="@color/black"
+            android:src="@drawable/baseline_arrow_forward_24"
+            app:civ_border_width="2dp"
+            app:civ_circle_background_color="#BAFFFF8D" />
+
+
+        <TextView
+            android:id="@+id/to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingTop="10dp"
+            android:text="To"
+            android:textColor="#7AFFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/value2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/to"
+            android:layout_alignParentRight="true"
+            android:fontFamily="@font/victor_mono_bold"
+            android:paddingTop="10dp"
+            android:text="hawasa"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
